@@ -41,7 +41,7 @@ cd ${BUILD_PATH}
 cmake \
     ${BUILD_PATH}/.. \
     -DCMAKE_INSTALL_PREFIX=${INSTALL_PATH} \
-    -DCMAKE_C_FLAGS=-fPIC \
+    -DCMAKE_C_FLAGS="-fPIC" \
     -DZLIB_ROOT=${REZ_ZLIB_ROOT}
 
 echo -e "\n"
