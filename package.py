@@ -39,11 +39,11 @@ uuid = "png-{version}".format(version=str(version))
 
 def commands():
     env.PATH.prepend("{root}/bin")
-    env.LD_LIBRARY_PATH.prepend("{root}/lib64")
-    env.PKG_CONFIG_PATH.prepend("{root}/lib64/pkgconfig")
+    env.LD_LIBRARY_PATH.prepend("{root}/lib")
+    env.PKG_CONFIG_PATH.prepend("{root}/lib/pkgconfig")
     env.CMAKE_MODULE_PATH.prepend("{root}/lib/libpng")
 
     # Helper environment variables.
     env.PNG_BINARY_PATH.set("{root}/bin")
     env.PNG_INCLUDE_PATH.set("{root}/include")
-    env.PNG_LIBRARY_PATH.set("{root}/lib64")
+    env.PNG_LIBRARY_PATH.set("{root}/lib")
